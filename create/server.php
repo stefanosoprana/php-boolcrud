@@ -8,7 +8,18 @@
     echo ("Connection failed: " . $conn->connect_error);
   }
 
-  var_dump('connesso'); die();
+  $name = $_POST['name'];
+  $lastname = $_POST['lastname'];
+  $date_of_birth = $_POST['date_of_birth'];
+  $document_type = $_POST['document_type'];
+  $document_number = $_POST['document_number'];
+
+  $sql = "INSERT INTO `ospiti` (`name`, `lastname`, `date_of_birth`, `document_type`, `document_number`)
+          VALUES ('$name', '$lastname', '$date_of_birth', '$document_type', '$document_number');";
+
+  $result = $conn->query($sql);
+
+  var_dump($result); die();
 
   $conn->close();
 
