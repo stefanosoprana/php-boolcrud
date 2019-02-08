@@ -1,3 +1,9 @@
+.row {
+  margin: 0;
+  .col-12 {
+    padding: 0;
+  }
+
 .b-navbar {
   width: 100%;
   float: left;
@@ -9,6 +15,7 @@
       height: 120px;
     }
   }
+}
   .navbar_right {
     float: left;
     width: 70%;
