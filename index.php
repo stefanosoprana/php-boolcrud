@@ -22,6 +22,7 @@
             <th>Nome</th>
             <th>Cognome</th>
             <th>Visualizza</th>
+            <th>Aggiorna</th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +38,7 @@
                   VAI
                 </a>
               </td>
+              <td><a href="http://localhost/esercizi/esercizio1_boolcrud/update/form.php?id=<?php echo $persona['id']; ?>" class="btn btn-success">Aggiorna</a></td>
             </tr>
           <?php } ?>
         </tbody>
