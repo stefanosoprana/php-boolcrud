@@ -21,6 +21,7 @@
             <th>ID</th>
             <th>Nome</th>
             <th>Cognome</th>
+            <th>Visualizza</th>
           </tr>
         </thead>
         <tbody>
@@ -31,6 +32,11 @@
               <td><?php echo $persona['id']; ?></td>
               <td><?php echo $persona['name']; ?></td>
               <td><?php echo $persona['lastname']; ?></td>
+              <td>
+                <a href="http://localhost/esercizi/esercizio1_boolcrud/show/show.php?id=<?php echo $persona['id']; ?>" class="btn btn-primary">
+                  VAI
+                </a>
+              </td>
             </tr>
           <?php } ?>
         </tbody>

@@ -10552,3 +10552,8 @@ table {
   color: black;
 }
 
+.card {
+  width: 24rem;
+  margin-top: 40px;
+}
+
