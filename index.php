@@ -23,6 +23,7 @@
             <th>Cognome</th>
             <th>Visualizza</th>
             <th>Aggiorna</th>
+            <th>Cancella</th>
           </tr>
         </thead>
         <tbody>
@@ -38,7 +39,17 @@
                   VAI
                 </a>
               </td>
-              <td><a href="http://localhost/esercizi/esercizio1_boolcrud/update/form.php?id=<?php echo $persona['id']; ?>" class="btn btn-success">Aggiorna</a></td>
+              <td>
+                <a href="http://localhost/esercizi/esercizio1_boolcrud/update/form.php?id=<?php echo $persona['id']; ?>" class="btn btn-success">
+                  Aggiorna
+                </a>
+              </td>
+              <td>
+                <form action="http://localhost/esercizi/esercizio1_boolcrud/delete/server.php" method="post">
+                  <input type="hidden" name="id" value="<?php echo  $persona['id']; ?>">
+                  <input type="submit" class="btn btn-danger" value="Cancella">
+              </td>
+              </form>
             </tr>
           <?php } ?>
         </tbody>

@@ -20,7 +20,9 @@
       $ospite = $result->fetch_assoc();
     }
 
+    $conn->close();
+
     return $ospite;
-    
+
   }
  ?>
